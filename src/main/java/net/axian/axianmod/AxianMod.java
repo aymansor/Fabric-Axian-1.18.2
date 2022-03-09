@@ -1,5 +1,6 @@
 package net.axian.axianmod;
 
+import net.axian.axianmod.block.ModBlocks;
 import net.axian.axianmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -20,6 +21,7 @@ public class AxianMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 	}
 }

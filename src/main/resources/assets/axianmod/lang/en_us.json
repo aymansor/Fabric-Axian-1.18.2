@@ -1,5 +1,14 @@
 {
+  "itemGroup.axianmod.mythril": "Mythril Tab",
+
   "item.axianmod.mythril_ingot": "Mythril Ingot",
   "item.axianmod.mythril_nugget": "Mythril Nugget",
-  "item.axianmod.raw_mythril": "Raw Mythril"
+  "item.axianmod.raw_mythril": "Raw Mythril",
+
+  "block.axianmod.mythril_block": "Mythril Block",
+  "block.axianmod.mythril_ore": "Mythril Ore",
+  "block.axianmod.deepslate_mythril_ore": "Deepslate Mythril Ore",
+  "block.axianmod.netherrack_mythril_ore": "Netherrack Mythril Ore",
+  "block.axianmod.raw_mythril_block": "Raw Mythril Block"
+
 }
