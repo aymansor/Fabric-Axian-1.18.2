@@ -9,6 +9,9 @@
   "block.axianmod.mythril_ore": "Mythril Ore",
   "block.axianmod.deepslate_mythril_ore": "Deepslate Mythril Ore",
   "block.axianmod.netherrack_mythril_ore": "Netherrack Mythril Ore",
-  "block.axianmod.raw_mythril_block": "Raw Mythril Block"
+  "block.axianmod.raw_mythril_block": "Raw Mythril Block",
+
+  "item.axianmod.dowsing_rod": "Dowsing Rod",
+  "item.axianmod.dowsing_rod.no_valuables": "§c[+]§r No Valuables Found!"
 
 }

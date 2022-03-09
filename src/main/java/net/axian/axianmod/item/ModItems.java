@@ -1,6 +1,7 @@
 package net.axian.axianmod.item;
 
 import net.axian.axianmod.AxianMod;
+import net.axian.axianmod.item.custom.DowsingRodItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -23,6 +24,12 @@ public class ModItems {
     public static final Item RAW_MYTHRIL = registerItem("raw_mythril",
             new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
 
+    // Dowsing Rod Item //////////////////////////////////////////////////////////////////////////
+
+    // [1 - Dowsing Rod]
+    // Uses maxDamage method to make the item not stack.
+    public static final Item DOWSING_ROD = registerItem("dowsing_rod",
+            new DowsingRodItem(new FabricItemSettings().group(ModItemGroup.MYTHRIL).maxDamage(16)));
 
     // Methods //////////////////////////////////////////////////////////////////////////////////
 
