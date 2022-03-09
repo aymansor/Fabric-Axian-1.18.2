@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "axianmod:mythril_block",
+    "axianmod:mythril_ore",
+    "axianmod:deepslate_mythril_ore",
+    "axianmod:netherrack_mythril_ore",
+    "axianmod:raw_mythril_block"
+  ]
+}
