@@ -1,6 +1,7 @@
 package net.axian.axianmod.block;
 
 import net.axian.axianmod.AxianMod;
+import net.axian.axianmod.block.custom.SpeedyBlock;
 import net.axian.axianmod.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -41,8 +42,11 @@ public class ModBlocks {
     public static final Block RAW_MYTHRIL_BLOCK = registerBlock("raw_mythril_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(7.5f).requiresTool()), ModItemGroup.MYTHRIL);
 
+    // Custom Blocks ////////////////////////////////////////////////////////////////////////////
 
-
+    // [Speedy Block]
+    public static final Block SPEEDY_BLOCK = registerBlock("speedy_block",
+            new SpeedyBlock(FabricBlockSettings.of(Material.METAL).strength(2.5f).requiresTool()), ModItemGroup.MYTHRIL);
 
     // Methods //////////////////////////////////////////////////////////////////////////////////
 
