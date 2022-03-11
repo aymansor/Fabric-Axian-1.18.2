@@ -31,13 +31,19 @@ public class ModItems {
     public static final Item DOWSING_ROD = registerItem("dowsing_rod",
             new DowsingRodItem(new FabricItemSettings().group(ModItemGroup.MYTHRIL).maxDamage(16)));
 
-    // Fuel Item ////////////////////////////////////////////////////////////////////////////////
+    // Fuel Items ////////////////////////////////////////////////////////////////////////////////
 
     // [Lilac Flower Bulb]
     public static final Item LILAC_FLOWER_BULB = registerItem("lilac_flower_bulb",
             new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
 
-    // Methods //////////////////////////////////////////////////////////////////////////////////
+    // Food Items ////////////////////////////////////////////////////////////////////////////////
+
+    // [Grape Food]
+    public static final Item GRAPE = registerItem("grape",
+            new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL).food(ModFoodComponents.GRAPE)));
+
+    // Methods ///////////////////////////////////////////////////////////////////////////////////
 
     // This method registers the item passed under the identifier MOD_ID and the item name passed.
     private static Item registerItem(String name, Item item){
