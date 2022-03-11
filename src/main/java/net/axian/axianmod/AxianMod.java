@@ -2,6 +2,7 @@ package net.axian.axianmod;
 
 import net.axian.axianmod.block.ModBlocks;
 import net.axian.axianmod.item.ModItems;
+import net.axian.axianmod.util.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,6 +23,8 @@ public class AxianMod implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModRegistries.registerModStuffs();
 
 	}
 }
