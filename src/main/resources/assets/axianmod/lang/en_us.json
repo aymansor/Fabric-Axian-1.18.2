@@ -15,8 +15,12 @@
 
   "item.axianmod.dowsing_rod": "Dowsing Rod",
   "item.axianmod.dowsing_rod.no_valuables": "§c[+]§r No Valuables Found!",
+  "item.axianmod.dowsing_rod.tooltip.shift": "§bRight click to find valuables§r",
+  "item.axianmod.dowsing_rod.tooltip": "Press §eSHIFT§r for more Information",
 
   "item.axianmod.lilac_flower_bulb": "Lilac Flower Bulb",
 
-  "item.axianmod.grape": "Grape"
+  "item.axianmod.grape": "Grape",
+
+  "tooltip.axianmod.mythril_block": "A Decor Block"
 }
