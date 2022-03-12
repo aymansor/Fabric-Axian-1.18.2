@@ -11,6 +11,12 @@
   "block.axianmod.netherrack_mythril_ore": "Netherrack Mythril Ore",
   "block.axianmod.raw_mythril_block": "Raw Mythril Block",
 
+  "block.axianmod.mythril_button": "Mythril Button",
+  "block.axianmod.mythril_pressure_plate": "Mythril Pressure Plate",
+  "block.axianmod.mythril_fence": "Mythril Fence",
+  "block.axianmod.mythril_wall": "Mythril Wall",
+  "block.axianmod.mythril_fence_gate": "Mythril Fence Gate",
+
   "block.axianmod.speedy_block": "Speedy Block",
 
   "item.axianmod.dowsing_rod": "Dowsing Rod",

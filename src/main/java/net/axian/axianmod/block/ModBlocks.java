@@ -1,12 +1,13 @@
 package net.axian.axianmod.block;
 
 import net.axian.axianmod.AxianMod;
+import net.axian.axianmod.block.custom.ModPressurePlateBlock;
+import net.axian.axianmod.block.custom.ModStoneButtonBlock;
 import net.axian.axianmod.block.custom.SpeedyBlock;
 import net.axian.axianmod.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -58,6 +59,28 @@ public class ModBlocks {
     // [Speedy Block]
     public static final Block SPEEDY_BLOCK = registerBlock("speedy_block",
             new SpeedyBlock(FabricBlockSettings.of(Material.METAL).strength(2.5f).requiresTool()), ModItemGroup.MYTHRIL);
+
+
+    public static final Block MYTHRIL_BUTTON = registerBlock("mythril_button",
+            new ModStoneButtonBlock(FabricBlockSettings.of(Material.METAL)
+                    .strength(4.0f).requiresTool().noCollision()), ModItemGroup.MYTHRIL);
+
+
+    public static final Block MYTHRIL_PRESSURE_PLATE = registerBlock("mythril_pressure_plate",
+            new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.METAL)
+                    .strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
+
+
+    public static final Block MYTHRIL_FENCE = registerBlock("mythril_fence",
+            new FenceBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
+
+
+    public static final Block MYTHRIL_FENCE_GATE = registerBlock("mythril_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
+
+
+    public static final Block MYTHRIL_WALL = registerBlock("mythril_wall",
+            new WallBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
 
 
     // Methods //////////////////////////////////////////////////////////////////////////////////
