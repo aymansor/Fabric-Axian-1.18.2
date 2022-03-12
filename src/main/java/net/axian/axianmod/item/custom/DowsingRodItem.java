@@ -1,5 +1,6 @@
 package net.axian.axianmod.item.custom;
 
+import net.axian.axianmod.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -91,27 +92,33 @@ public class DowsingRodItem extends Item {
         String ColoredMessage = "";
 
         // Format the valuable block name. §l for bold and §r resets the formatting.
-        if ( blockBelow == Blocks.COAL_ORE){
-            ColoredMessage += "§7§l" + valuableBlock + "§r";    // §7: Gray
+        if ( blockBelow == Blocks.LAPIS_ORE){
+            ColoredMessage += "§9§l" + valuableBlock + "§r";    // §9: Blue
         }
-        else if (blockBelow == Blocks.COPPER_ORE) {
-            ColoredMessage += "§6§l" + valuableBlock + "§r";    // §6: Gold
+        else if (blockBelow == Blocks.REDSTONE_ORE) {
+            ColoredMessage += "§c§l" + valuableBlock + "§r";    // §6: red
+        }
+        else if (blockBelow == Blocks.GOLD_ORE) {
+            ColoredMessage += "§g§l" + valuableBlock + "§r";    // §g: Minecoin Gold
+        }
+        else if (blockBelow == Blocks.EMERALD_ORE) {
+            ColoredMessage += "§a§l" + valuableBlock + "§r";    // §g: Green
         }
         else if (blockBelow == Blocks.DIAMOND_ORE) {
             ColoredMessage += "§b§l" + valuableBlock + "§r";    // §b: Aqua
         }
-        else if (blockBelow == Blocks.IRON_ORE) {
-            ColoredMessage += "§g§l" + valuableBlock + "§r";    // §g: Minecoin Gold
+        else {
+            ColoredMessage += "§l" + valuableBlock + "§r";
         }
+
 
         player.sendMessage(new LiteralText("§a[+]§r Found " + ColoredMessage + " at " +
                 "(" + blockPos.getX() + ", " + blockPos.getY() + ", " + blockPos.getZ() + ")"), false);
     }
 
 
-    // Returns true if the passed block is one of the valuable blocks defined below.
+    // Returns true if the passed block is one of the valuable blocks defined in dowsing_rod_detectable_blocks.json.
     private boolean isValuableBlock(Block block) {
-        return block == Blocks.COAL_ORE || block == Blocks.COPPER_ORE
-                || block == Blocks.DIAMOND_ORE || block == Blocks.IRON_ORE;
+        return block.getDefaultState().isIn(ModTags.Blocks.DOWSING_ROD_DETECTABLE_BLOCKS);
     }
 }
