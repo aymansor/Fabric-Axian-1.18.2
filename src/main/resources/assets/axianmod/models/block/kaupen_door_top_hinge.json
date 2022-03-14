@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_rh",
+  "textures": {
+    "top": "axianmod:block/kaupen_door_top",
+    "bottom": "axianmod:block/kaupen_door_bottom"
+  }
+}

@@ -1,9 +1,7 @@
 package net.axian.axianmod.block;
 
 import net.axian.axianmod.AxianMod;
-import net.axian.axianmod.block.custom.ModPressurePlateBlock;
-import net.axian.axianmod.block.custom.ModStoneButtonBlock;
-import net.axian.axianmod.block.custom.SpeedyBlock;
+import net.axian.axianmod.block.custom.*;
 import net.axian.axianmod.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -60,27 +58,42 @@ public class ModBlocks {
     public static final Block SPEEDY_BLOCK = registerBlock("speedy_block",
             new SpeedyBlock(FabricBlockSettings.of(Material.METAL).strength(2.5f).requiresTool()), ModItemGroup.MYTHRIL);
 
-
+    // [Mythril Button]
     public static final Block MYTHRIL_BUTTON = registerBlock("mythril_button",
             new ModStoneButtonBlock(FabricBlockSettings.of(Material.METAL)
                     .strength(4.0f).requiresTool().noCollision()), ModItemGroup.MYTHRIL);
 
-
+    // [Mythril Pressure Plate]
     public static final Block MYTHRIL_PRESSURE_PLATE = registerBlock("mythril_pressure_plate",
             new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.METAL)
                     .strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
 
-
+    // [Mythril Fence]
     public static final Block MYTHRIL_FENCE = registerBlock("mythril_fence",
             new FenceBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
 
-
+    // [Mythril Fence Gate]
     public static final Block MYTHRIL_FENCE_GATE = registerBlock("mythril_fence_gate",
             new FenceGateBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
 
-
+    // [Mythril Wall]
     public static final Block MYTHRIL_WALL = registerBlock("mythril_wall",
             new WallBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
+
+    public static final Block MYTHRIL_SLAB = registerBlock("mythril_slab",
+            new SlabBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
+
+    public static final Block MYTHRIL_STAIRS = registerBlock("mythril_stairs",
+            new ModStairsBlock(ModBlocks.MYTHRIL_BLOCK.getDefaultState(),
+                    FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL);
+
+    public static final Block KAUPEN_DOOR = registerBlock("kaupen_door",
+            new ModDoorBlock(FabricBlockSettings.of(Material.WOOD)
+                    .strength(4.0f).requiresTool().nonOpaque()), ModItemGroup.MYTHRIL);
+
+    public static final Block KAUPEN_TRAPDOOR = registerBlock("kaupen_trapdoor",
+            new ModTrapdoorBlock(FabricBlockSettings.of(Material.WOOD)
+                    .strength(4.0f).requiresTool().nonOpaque()), ModItemGroup.MYTHRIL);
 
 
     // Methods //////////////////////////////////////////////////////////////////////////////////

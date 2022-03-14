@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.axian.axianmod.AxianMod"
+    ],
+    "client": [
+      "net.axian.axianmod.AxianClientMod"
     ]
   },
   "mixins": [

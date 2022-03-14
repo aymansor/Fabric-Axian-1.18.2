@@ -17,6 +17,11 @@
   "block.axianmod.mythril_wall": "Mythril Wall",
   "block.axianmod.mythril_fence_gate": "Mythril Fence Gate",
 
+  "block.axianmod.kaupen_door": "Kaupen Door",
+  "block.axianmod.kaupen_trapdoor": "Kaupen Trapdoor",
+  "block.axianmod.mythril_slab": "Mythril Slab",
+  "block.axianmod.mythril_stairs": "Mythril Stairs",
+  
   "block.axianmod.speedy_block": "Speedy Block",
 
   "item.axianmod.dowsing_rod": "Dowsing Rod",

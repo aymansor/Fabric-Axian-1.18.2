@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "axianmod:block/mythril_slab"
+    },
+    "type=double": {
+      "model": "axianmod:block/mythril_block"
+    },
+    "type=top": {
+      "model": "axianmod:block/mythril_slab_top"
+    }
+  }
+}
