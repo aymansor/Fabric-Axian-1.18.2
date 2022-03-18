@@ -33,5 +33,11 @@
 
   "item.axianmod.grape": "Grape",
 
-  "tooltip.axianmod.mythril_block": "A Decor Block"
+  "tooltip.axianmod.mythril_block": "A Decor Block",
+
+  "item.axianmod.mythril_pickaxe": "Mythril Pickaxe",
+  "item.axianmod.mythril_axe": "Mythril Axe",
+  "item.axianmod.mythril_shovel": "Mythril Shovel",
+  "item.axianmod.mythril_hoe": "Mythril Hoe",
+  "item.axianmod.mythril_sword": "Mythril Sword"
 }
